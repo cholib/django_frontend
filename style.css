@@ -56,7 +56,7 @@ body
 {
   position: relative;
   display: block;
-  line-height: 55px;
+  line-height: 50px;
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
@@ -64,7 +64,7 @@ body
 }
 .navigation ul li.active a .icon
 {
- transform: translateY(-23px);
+ transform: translateY(-20px);
 }
 .navigation ul li a .text
 {
@@ -85,15 +85,15 @@ body
 .indicator
 {
   position: absolute;
-  top:-50%;
+  top:-63%;
   width: 50px;
   height: 50px;
   background: #29fd53;
-  border-radius: 50%;
-  border: 6px solid var(--clr);
+  border-radius: 30%;
+  border: 2px solid var(--clr);
   transition: 0.5s;
 }
-.indicator::before
+/* .indicator::before
 {
   content: '';
   position: absolute;
@@ -116,7 +116,7 @@ body
   background: transparent;
   border-top-left-radius: 20px;
   box-shadow: -1px -10px 0 0 var(--clr);
-}
+} */
 .navigation ul li:nth-child(1).active ~ .indicator
 {
   transform: translateX(calc(50px * 0));
